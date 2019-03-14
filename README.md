@@ -30,5 +30,5 @@ DBConnector example = new DBConnector("localhost", "database", "username", "pass
 or
 
 ```java
-DBConnector example = new DBConnector("localhost", "database", "username", "password");
+DBConnector example = new DBConnector("localhost", "port", "database", "username", "password");
 ```
