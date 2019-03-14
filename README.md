@@ -47,6 +47,6 @@ Parameters of the Constructors:
 
 <br>
 <br>
-To request information from the MariaDB-Server simply use the `executeQuery()` Method. This method requires the normal MySQL-Querry as a `Sring` and returnes a `ResultSet` Object.
+To request information from the MariaDB-Server simply use the ` executeQuery() ` Method. This method requires the normal MySQL-Querry as a ` Sring ` and returnes a `ResultSet` Object.
 <br>
-For all other matters use the `executeStatement()` Method, which requires the MySQL-Statement as a `String`.
+For all other matters use the ` executeStatement() ` Method, which requires the MySQL-Statement as a ` String `.
