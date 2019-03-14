@@ -1,4 +1,4 @@
-package conn.db;
+package dbConn;
 import java.sql.*;
 import java.util.concurrent.ExecutionException;
 
