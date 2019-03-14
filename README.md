@@ -12,3 +12,11 @@ Now you have to add the folder "[db](/db)" of this project to your Sourcecode fo
 <br>
 <h2> Usage </h2>
 <br>
+To create an Instance of the DBConnector Object you can choose between two consructors:
+```
+DBConnect example = new DBConnect("localhost", "database", "username", "password");
+```
+or
+```
+DBConnect example = new DBConnect("localhost", "database", "username", "password");
+```
