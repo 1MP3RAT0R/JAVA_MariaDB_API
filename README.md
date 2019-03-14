@@ -24,11 +24,23 @@ To create an Instance of the DBConnector Object you can choose between two consr
 <br>
 
 ```java
-DBConnector example = new DBConnector("localhost", "database", "username", "password");
+DBConnector example = new DBConnector("<url>", "<database>", "<username>", "<password>");
 ```
 
 or
 
 ```java
-DBConnector example = new DBConnector("localhost", "port", "database", "username", "password");
+DBConnector example = new DBConnector("<url>", "<port>", "<database>", "<username>", "<password>");
 ```
+
+<br>
+Parameters of the Constructors:
+<br>
+
+|Parameter|Description|
+|---|---|
+|url|The URL or IP of the MariaDB-Server|
+|port|The Port of the MariaDB-Server (Optional, if not used the standard port 3306 will be used)|
+|database|The Name of the Database to be used|
+|username|Username for the MariaDB-Server|
+|password|Password for the MariaDB-Server|
