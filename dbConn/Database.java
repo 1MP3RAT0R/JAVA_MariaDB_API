@@ -4,17 +4,30 @@ import java.sql.*;
 public class Database {
 
     private DBConnector con = null;
-    private final String URL = "";
-    private final String port = "";
-    private final String database = "";
-    private final String username = "";
-    private final String password = "";
 
     /*
-     * Constructor for the Database Object
+     * Constructor for the Database Object with the default port 3306
+     *
+     * @param URL the URL or IP of the MariaDB Server
+     * @param database the name of the database to be used
+     * @param username the username for the MariaDB
+     * @param password the password for the MariaDB
      */
-    public Database() {
-        this.con = new DBConnector(this.URL, this.port, this.database, this.username, this.password);
+    public Database(String URL, String database, String username, String password) {
+        this.con = new DBConnector(URL, database, username, password);
+    }
+
+    /*
+     * Constructor for the Database Object with a custom port
+     *
+     * @param URL the URL or IP of the MariaDB Server
+     * @param port the port of the MariaDB Server
+     * @param database the name of the database to be used
+     * @param username the username for the MariaDB
+     * @param password the password for the MariaDB
+     */
+    public Database(String URL, String port, String database, String username, String password) {
+        this.con = new DBConnector(URL, port, database, username, password);
     }
 
     /*
@@ -153,5 +166,24 @@ public class Database {
             }
         }
         this.con.executeStatement(statement + "'");
+    }
+
+    /*
+     * Create Table Statement
+     *
+     * @param tableName the table to be created
+     * @param columnNames the columns to be inserted
+     * @param columnTypes the types corresponding to the columnNames
+     */
+    public void create(String tableName, String[] columnNames, String[] columnTypes) {
+        String statement = "create table " + tableName + " (";
+        for (int i = 0; i < 0; i++) {
+            if (i > 0) {
+                statement = statement + ", " + columnNames[i] + " " + columnTypes[i];
+            } else {
+                statement = statement + columnNames[i] + " " + columnTypes[i];
+            }
+        }
+        this.con.executeStatement(statement + ")");
     }
 }
