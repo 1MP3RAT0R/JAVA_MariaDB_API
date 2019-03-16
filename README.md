@@ -7,10 +7,12 @@ This simple Package makes the connection from JAVA to MySQL very simple. It can 
 Download the JAR-File from the "library"-folder and bind it in your IDE as a external Library. This file comes directly from mariadb.com. If you want check for a newer Version, you can find it here: https://mariadb.com/downloads/#connectors-connectors_dataaccess
 <br>
 <br>
-Now you have to add the folder "dbConn" of this project to your Sourcecode folder ("src"). This will make the package db and the Class "DBConnector" available for your project.
+Now you have to add the folder "dbConn" of this project to your Sourcecode folder ("src"). This will make the package db and the Class "Database" available for your project. For more basic funktionality you can also user the "DBConnector" Class.
 <br>
 <br>
 <h2> Usage </h2>
+<br>
+<h3> Import and Constructor </h3>
 <br>
 Fist, bind in the package:
 <br>
@@ -20,17 +22,17 @@ Fist, bind in the package:
 import dbConn.*;
 ```
 
-To create an Instance of the DBConnector Object you can choose between two consructors:
+To create an Instance of the Database Object you can choose between two consructors:
 <br>
 
 ```java
-DBConnector example = new DBConnector("<url>", "<database>", "<username>", "<password>");
+Database example = new Database("<url>", "<database>", "<username>", "<password>");
 ```
 
 or
 
 ```java
-DBConnector example = new DBConnector("<url>", "<port>", "<database>", "<username>", "<password>");
+Database example = new Database("<url>", "<port>", "<database>", "<username>", "<password>");
 ```
 
 <br>
@@ -46,6 +48,13 @@ Parameters of the Constructors:
 |password|Password for the MariaDB-Server|
 
 <br>
+<br>
+<h3> Methods of the Database Object </h3>
+<br>
+therhasd
+<br>
+<br>
+<h3> Methods of the DBConnector Object </h3>
 <br>
 To request information from the MariaDB-Server simply use the executeQuery() Method. This method requires the normal MySQL-Querry as a String and returnes a ResultSet Object.
 <br>
