@@ -70,11 +70,12 @@ Create, Insert and Update:
 Select Operations:
 <br>
 
-|Method|Description|Parameters|Return|
+|Method|Description|Parameter IDs|Return|
 |---|---|---|---|
 |select()|Retrieves defined columns from one or more Rows of data which meet the criteria|8, 1, 6, 7|ResultSet Object|
 |selectAll()|Retrieves all columns of all rows of data in a table|1|ResultSet Object|
-||||ResultSet Object|
+|selectAllColumnsSpecificRows()|Retrieves all columns of a specific set of rows of data|1, 6, 7|ResultSet Object|
+|selectAllRowsSpecificColumns()|Retrieves specific columns of all Data in the table|8, 1|ResultSet Object|
 
 <br>
 <br>
