@@ -80,7 +80,7 @@ Parameter Description:
 <br>
 
 |ID|Parameter|Description|
-|---|---|---|---|
+|---|---|---|
 |1|String table|the name of the Table|
 |2|String[] columnNames|the names of the Columns of the new table|
 |3|String[] columnTypes|the types of the Columns defined in ID 2|
