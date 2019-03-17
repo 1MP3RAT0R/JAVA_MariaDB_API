@@ -56,7 +56,6 @@ The Database Object has different Methods to complete the most actions in the Ma
 <br>
 <h4> Create, Insert and Update: </h4>
 <br>
-<br>
 
 |Method|Description|Parameter IDs|Return|
 |---|---|---|---|
@@ -66,8 +65,7 @@ The Database Object has different Methods to complete the most actions in the Ma
 
 <br>
 <br>
-Drop and Delete:
-<br>
+<h4> Drop and Delete: </h4>
 <br>
 
 |Method|Description|Parameter IDs|Return|
@@ -79,8 +77,7 @@ Drop and Delete:
 <br>
 
 
-Select Operations:
-<br>
+<h4> Select Operations: </h4>
 <br>
 
 |Method|Description|Parameter IDs|Return|
@@ -92,8 +89,7 @@ Select Operations:
 
 <br>
 <br>
-Parameter Description:
-<br>
+<h4> Parameter Description: </h4>
 <br>
 
 |ID|Parameter|Description|
