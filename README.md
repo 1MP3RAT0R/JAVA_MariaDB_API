@@ -54,7 +54,7 @@ Parameters of the Constructors:
 The Database Object has different Methods to complete the most actions in the MariaDB Database. The parameters for each method have and ID reffering to a table at the end of this section, describing the funktion and type of Variable.
 <br>
 <br>
-Create, Insert and Update:
+<h4> Create, Insert and Update: </h4>
 <br>
 <br>
 
