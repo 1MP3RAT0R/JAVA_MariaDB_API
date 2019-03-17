@@ -1,4 +1,4 @@
-# Simple JAVA-MySQL API
+# Simple JAVA-MariaDB API
 <br>
 This simple Package makes the connection from JAVA to MySQL very simple. It can handle normal SQL-Querys and SQL-Statements and is dedicated for JAVA-Beginners to use a MariaDB Database.
 
