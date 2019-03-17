@@ -66,8 +66,21 @@ Create, Insert and Update:
 
 <br>
 <br>
+Drop and Delete:
+<br>
+<br>
+
+|Method|Description|Parameter IDs|Return|
+|---|---|---|---|
+|dropTable()|Drops the table and all the data stored in it|1|None|
+|deleteRows()|deletes all the rows of data all the parameters apply to|1, 6, 7|None|
+
+<br>
+<br>
+
 
 Select Operations:
+<br>
 <br>
 
 |Method|Description|Parameter IDs|Return|
