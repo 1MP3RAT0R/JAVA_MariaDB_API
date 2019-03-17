@@ -59,14 +59,14 @@ Create, Insert and Update:
 
 |Method|Description|Parameter IDs|Return|
 |---|---|---|---|
-|create()|Creating a Table in the Database|1, 2, 3|None|
-|insert()|Insert an new Row of data into a table|1, 4, 5|None|
-|||||
+|create()|Creates a new Table in the Database|1, 2, 3|None|
+|insert()|Inserts an new Row of data into a table|1, 4, 5|None|
+|update()|Updates specific Values of specified existing rows of data|1, 4, 5, 6, 7|None|
 
 <br>
 <br>
 
-Select operations:
+Select:
 <br>
 
 |Method|Description|Parameters|
@@ -85,8 +85,11 @@ Parameter Description:
 |1|String table|the name of the Table|
 |2|String[] columnNames|the names of the Columns of the new table|
 |3|String[] columnTypes|the types of the Columns defined in ID 2|
-|4|String[] columns|the columns the values should be added in|
-|5|String[] values|the values to be inserted, corresponding to ID 4|
+|4|String[] columns|the names of the columns the values should be added in|
+|5|String[] values|the values to be inserted into the columns defined ID 4|
+|6|String[] parameterColumns|The Names of the Columns to be searched|
+|7|String[] parameterValues|The values to be searched for in the columns defined in ID 6|
+
 
 <br>
 <br>
