@@ -38,6 +38,7 @@ Database example = new Database("<url>", "<port>", "<database>", "<username>", "
 <br>
 Parameters of the Constructors:
 <br>
+<br>
 
 |Parameter|Description|
 |---|---|
