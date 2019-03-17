@@ -67,14 +67,14 @@ Create, Insert and Update:
 <br>
 <br>
 
-Select:
+Select Operations:
 <br>
 
-|Method|Description|Parameters|
-|---|---|---|
-||||
-||||
-||||
+|Method|Description|Parameters|Return|
+|---|---|---|---|
+|select()|Retrieves defined columns from one or more Rows of data which meet the criteria|8, 1, 6, 7|ResultSet Object|
+|selectAll()|Retrieves all columns of all rows of data in a table|1|ResultSet Object|
+||||ResultSet Object|
 
 <br>
 <br>
@@ -91,7 +91,7 @@ Parameter Description:
 |5|String[] values|the values to be inserted into the columns defined ID 4|
 |6|String[] parameterColumns|The Names of the Columns to be searched|
 |7|String[] parameterValues|The values to be searched for in the columns defined in ID 6|
-
+|8|Strind[] selectColumns|The columns to be returned|
 
 <br>
 <br>
