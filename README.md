@@ -56,10 +56,10 @@ The Database Object has different Methods to complete the most actions in the Ma
 Create, Insert and Update:
 <br>
 
-|Method|Description|Parameter ID|Return|
+|Method|Description|Parameter IDs|Return|
 |---|---|---|---|
 |create()|Creating a Table in the Database|1, 2, 3|None|
-|insert()||||
+|insert()|Insert an new Row of data into a table|1, 4, 5|None|
 |||||
 
 <br>
@@ -83,7 +83,9 @@ Parameter Description:
 |---|---|---|---|
 |1|String table|the name of the Table|
 |2|String[] columnNames|the names of the Columns of the new table|
-|3|String[] columnTypes|the types of the Columns defined i|
+|3|String[] columnTypes|the types of the Columns defined in ID 2|
+|4|String[] columns|the columns the values should be added in|
+|5|String[] values|the values to be inserted, corresponding to ID 4|
 
 <br>
 <br>
