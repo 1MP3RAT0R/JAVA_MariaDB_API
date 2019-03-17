@@ -51,9 +51,43 @@ Parameters of the Constructors:
 <br>
 <h3> Methods of the Database Object </h3>
 <br>
-therhasd
+The Database Object has different Methods to complete the most actions in the MariaDB Database.
+<br>
+Create, Insert and Update:
+<br>
+
+|Method|Description|Parameter ID|Return|
+|---|---|---|---|
+|create()|Creating a Table in the Database|1, 2, 3|None|
+|insert()||||
+|||||
+
 <br>
 <br>
+
+Select operations:
+<br>
+
+|Method|Description|Parameters|
+|---|---|---|
+||||
+||||
+||||
+
+<br>
+<br>
+Parameter Description:
+<br>
+
+|ID|Parameter|Description|
+|---|---|---|---|
+|1|String table|the name of the Table|
+|2|String[] columnNames|the names of the Columns of the new table|
+|3|String[] columnTypes|the types of the Columns defined i|
+
+<br>
+<br>
+
 <h3> Methods of the DBConnector Object </h3>
 <br>
 To request information from the MariaDB-Server simply use the executeQuery() Method. This method requires the normal MySQL-Querry as a String and returnes a ResultSet Object.
