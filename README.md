@@ -56,6 +56,7 @@ The Database Object has different Methods to complete the most actions in the Ma
 <br>
 Create, Insert and Update:
 <br>
+<br>
 
 |Method|Description|Parameter IDs|Return|
 |---|---|---|---|
@@ -79,6 +80,7 @@ Select:
 <br>
 Parameter Description:
 <br>
+<br>
 
 |ID|Parameter|Description|
 |---|---|---|
@@ -95,7 +97,6 @@ Parameter Description:
 <br>
 
 <h3> Methods of the DBConnector Object </h3>
-<br>
 To request information from the MariaDB-Server simply use the executeQuery() Method. This method requires the normal MySQL-Querry as a String and returnes a ResultSet Object.
 <br>
 For all other matters use the executeStatement() Method, which requires the MySQL-Statement as a String.
