@@ -186,4 +186,32 @@ public class Database {
         }
         this.con.executeStatement(statement + ")");
     }
+
+    /*
+     * Drop a whole table
+     *
+     * @param table the table to be dropped
+     */
+    public void dropTable(String table) {
+        this.con.executeStatement("drop table " + table);
+    }
+
+    /*
+     * Delete all rows which comply to the parameters
+     *
+     * @param table the table from which the data should be removed
+     * @param parameterColumns the parameter columns
+     * @param parameterValues the parameter values
+     */
+    public void deleteRows(String table, String[] parameterColumns, String[] parameterValues) {
+        String statement = "delete from " + table + " where ";
+        for (int i = 0; i < parameterColumns.length; i++) {
+            if (i > 0) {
+                statement = statement + "' and " + parameterColumns[i] + " = '" + parameterValues[i];
+            } else {
+                statement = statement + parameterColumns[i] + " = '" + parameterValues[i];
+            }
+        }
+        this.con.executeStatement(statement + "'");
+    }
 }
