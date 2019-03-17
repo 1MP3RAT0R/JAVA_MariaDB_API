@@ -101,7 +101,7 @@ The Database Object has different Methods to complete the most actions in the Ma
 |5|String[] values|the values to be inserted into the columns defined ID 4|
 |6|String[] parameterColumns|The Names of the Columns to be searched|
 |7|String[] parameterValues|The values to be searched for in the columns defined in ID 6|
-|8|Strind[] selectColumns|The columns to be returned|
+|8|String[] selectColumns|The columns to be returned|
 
 <br>
 <br>
