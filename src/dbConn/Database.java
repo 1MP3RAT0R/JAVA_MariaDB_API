@@ -177,7 +177,7 @@ public class Database {
      */
     public void create(String tableName, String[] columnNames, String[] columnTypes) {
         String statement = "create table " + tableName + " (";
-        for (int i = 0; i < 0; i++) {
+        for (int i = 0; i < columnNames.length; i++) {
             if (i > 0) {
                 statement = statement + ", " + columnNames[i] + " " + columnTypes[i];
             } else {
